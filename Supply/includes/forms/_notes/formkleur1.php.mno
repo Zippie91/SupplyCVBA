@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ProdBoven1" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_ProdOnder1" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+</info>

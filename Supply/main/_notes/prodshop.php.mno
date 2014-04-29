@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_CategorieData" value="name:cat_id;datatype:int,name:cat_beschrijving;datatype:string,name:cat_tandkies;datatype:string,name:cat_soort;datatype:string" />
+	<infoitem key="UD_Recordset1" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_ProductData" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_KleurData" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+</info>

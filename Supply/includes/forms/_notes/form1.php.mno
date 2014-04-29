@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_ProdBoven1" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_ProdOnder1" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_KleurQuery1" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery2" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_ProdBoven2" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+	<infoitem key="UD_ProdOnder2" value="name:prod_id;datatype:int,name:prod_naam;datatype:string,name:prod_actief;datatype:int,name:prod_categorie;datatype:int,name:prod_plaats;datatype:string,name:prod_kleur;datatype:int" />
+</info>

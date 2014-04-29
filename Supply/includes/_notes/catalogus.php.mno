@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_CEMol" value="name:cat_id;datatype:int,name:cat_beschrijving;datatype:string,name:cat_tandkies;datatype:string,name:cat_soort;datatype:string" />
+	<infoitem key="UD_CETand" value="name:cat_id;datatype:int,name:cat_beschrijving;datatype:string,name:cat_tandkies;datatype:string,name:cat_soort;datatype:string" />
+	<infoitem key="UD_CRMol" value="name:cat_id;datatype:int,name:cat_beschrijving;datatype:string,name:cat_tandkies;datatype:string,name:cat_soort;datatype:string" />
+	<infoitem key="UD_CRTand" value="name:cat_id;datatype:int,name:cat_beschrijving;datatype:string,name:cat_tandkies;datatype:string,name:cat_soort;datatype:string" />
+</info>

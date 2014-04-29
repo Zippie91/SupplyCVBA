@@ -1,0 +1,363 @@
+@charset "utf-8";
+body {
+	background: #42413C url('../images/background_line_blue.png') repeat-x;
+	margin: 0;
+	padding: 0;
+	color: #444444;
+	font-family: Garamond, Calibri;
+	font-size: 15px;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #9A9661;
+    margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+p {
+    color: #444444;
+}
+
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #00707B;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	width: 1000px;
+	background-color: #FFF;
+	height: auto !important;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ Header ~~ */
+.header {
+	background-color: #0093D3;
+	height: 125px;
+}
+
+.logoS {
+	display: block;
+	background: url(../images/headerbody/SupplyLogo_new_small.png) 0 0 no-repeat;
+	width: 170px;
+	height: 85px;
+	position: relative; 
+	top: 18px;
+	left: 7%;		
+}
+
+.logoE {
+	width: 155px;
+	height: 82px;
+	position: relative; 
+	top: -50px;
+	left: 80%;
+	border: outset 2px #0093D3;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+/* ~~ Navigation bar ~~ */
+.nav {
+	width: 100%;
+	background-color: #FFF;
+	height: 50px;
+	border-bottom: solid 1px #88C6E2;
+	font-size: 14px;		
+}
+
+.main_menu {
+	float: right;
+	text-align: center;
+	position: relative;
+	left: -50%;
+}
+
+.bluebar {
+	padding: 5px;
+	margin: 10px 0;
+	list-style: none;
+	float: left;
+	clear: left;
+	position: relative;
+	left: 50%;
+}
+
+.bluebar li {
+	float: left;
+	display: inline;
+	margin: 0 10px;
+}
+
+.bluebar li a {
+	text-decoration: none;
+	float: left;
+	color: #747474;
+	cursor: pointer;
+	font: 900 14px/22px;
+}
+
+.bluebar li a span {
+	margin: 0 10px 0 -10px;
+	padding: 1px 8px 5px 18px;
+	position: relative;
+	float: left;
+}
+
+ul.bluebar li a.current, ul.bluebar li a:hover {
+	background: url(../images/nav/blue_bar.png) no-repeat top right;
+	color: #0d5f83;
+}
+
+ul.bluebar li a.current span, ul.bluebar li a:hover span {
+	background: url(../images/nav/blue_bar.png) no-repeat top left;
+}
+
+/* ~~ Shopping cart and Language bar ~~ */
+.shopcart a{
+	float: right;
+	position: relative;
+	right: -28%;
+	top: 5px;
+	height: 40px;
+	width: 40px;
+	background: url(../images/buttons/shop_cart_empty.png) no-repeat;	
+}
+
+/* ~~ Sidebar ~~ */
+.sidebar {
+	margin: 5px 5px 5px 10px;
+	padding: 10px 5px;
+	float: left;	
+	width: 200px;
+}
+
+.sidebar h3 {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background: #043948;
+	color: #FFF;
+	border: none;
+	letter-spacing: 0;
+	padding: 10px;
+	margin-top: 0;
+	text-transform: none;	
+}
+
+.sidebar h4 {
+	margin-top: 10px;
+	margin-bottom: 2px;
+	padding: 0 10px;
+	text-decoration: underline;
+    color: #79764c;
+}
+
+.sidebar h5 {
+	margin-bottom: 2px;
+	padding: 0 15px;
+    color: #79764c;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0 20px;	
+}
+
+.subsidebar {
+	background-color: #f7f3c2;
+	top: 20px;
+	left: 20px;
+	padding-bottom: 5px;	
+}
+
+/* ~~ The content ~~ */
+.content {
+	width: 760px;	
+	padding: 10px 5px;
+	float: left;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 5px 0;
+	background-color: #043948;
+	clear: both;
+	position: relative;
+}
+
+.footer p {
+    color: #E2E2E2;
+}
+
+.footercontact {
+    float: right;
+    text-align: right;
+    margin-right: 10px;
+    color: #E2E2E2;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+    margin-top: 25px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/* ~~ Bestelformulier ~~ */
+.bestelling {
+	border-collapse: collapse;
+	text-align: center;	
+	margin: 0 auto;
+	width: 728px;
+}
+
+.bestelling2 {
+	border-collapse: collapse;
+	text-align: center;	
+	margin: 0 auto;
+}
+
+.kleur th, .foot td {
+	/* Gradient background - background: #339999; */
+    background: rgb(0,151,166); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(0,151,166,1) 15%, rgba(0,112,123,1) 84%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,rgba(0,151,166,1)), color-stop(84%,rgba(0,112,123,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,151,166,1) 15%,rgba(0,112,123,1) 84%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,151,166,1) 15%,rgba(0,112,123,1) 84%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,151,166,1) 15%,rgba(0,112,123,1) 84%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,151,166,1) 15%,rgba(0,112,123,1) 84%); /* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0097a6', endColorstr='#00707b',GradientType=0 ); /* IE6-9 */
+    
+	color: #FFFFFF;
+	margin: 0 auto;
+	padding: 5px 0;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.first {
+	width: 55px;
+	text-align: left;
+}
+
+.title {
+	background: #00707b;
+    color: #FFFFFF;
+	
+}
+
+.subcat {
+    text-align: left;
+    font-weight: bold;
+}
+.bestelling input, .bestelling2 input {
+	text-align: center;
+	width: 29px;
+}
+
+.even {
+	background-color: #d7e7ff;
+}
+
+.oneven {
+	background-color: #ebf2fa;
+}
+
+.userinfo {
+	border-collapse: collapse;
+	text-align: center;	
+	margin: 15px auto;
+	width: 728px;
+	background-color: #ebf2fa;
+}
+
+.userinfo2 {
+	border-collapse: collapse;
+	text-align: center;	
+	margin: 15px 0;
+	width: 250px;
+}
+
+.userinfo td, .userinfo2 td, .userinfo2 th {
+	text-align: left;
+	padding: 5px 0px 5px 5px;
+}
+
+.userinfo td.remember {
+    text-align: right;
+    padding: 0 20px;
+}
+
+.userinfo input.error, .userinfo2 input.error {
+    border: 1px dotted red;
+    background-color: #ffdddd;
+}
+
+.userinfo label.error, .userinfo2 label.error {
+    color: red;
+    text-decoration: underline;
+}
+
+.filler {
+	width: 200px;	
+}
+
+/* ~~ Buttons etc. ~~ */
+.submitbutton {
+	margin: 5px 15px;
+	height: 30px;
+	width: 79px;
+	background: url(../images/buttons/Submit.png) no-repeat top center;
+	background-size: 79px 30px;
+	border: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+/* ~~ contact ~~ */
+.contactinfo {
+	float: left;
+	width: 250px;
+	height: 320px;
+}

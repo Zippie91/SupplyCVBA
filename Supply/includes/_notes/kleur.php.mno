@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_KleurQuery" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery1" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery2" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery3" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery4" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+	<infoitem key="UD_KleurQuery5" value="name:kleur_id;datatype:int,name:kleur_naam;datatype:string" />
+</info>
